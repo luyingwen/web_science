@@ -1,0 +1,56 @@
+body {
+	background: url("bg.jpg") repeat;
+}
+
+#widget {
+	width: 558px;
+	height: 378px;
+	background: url("widget_bg.png") no-repeat;
+	margin: auto;
+}
+
+#widget_content {
+	width: 526px;
+	height: 366px;
+}
+
+#top {
+	height: 60%;
+}
+
+#bottom {
+	/*background: rgba(0,0,0,200);*/
+}
+
+/*
+th, td {
+	border-style: dotted;
+	border-width: 1px;
+}
+*/
+
+#clock {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bold;
+	font-size: 1000%;
+	color: rgb(60,60,60);
+	margin: auto;
+	width: 89%;
+}
+
+p {
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	color: rgb(220,220,220);
+}
+.primary {
+	font-weight: bold;
+	font-size: 150%;
+}
+.secondary {
+	font-weight: normal;
+	font-size: 75%;
+}
+.image {
+	font-size: 100%;
+}
