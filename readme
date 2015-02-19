@@ -1,0 +1,28 @@
+README
+Version 1.0 
+
+Author: Luying Wen
+
+Introduction:
+Connect to the weather API of OpenWeatherMap using the current location by HTML5 Geolocation to get the weather report.
+
+Installation:
+Run on the local server, and install apache. 
+Install bootstrap.
+
+Brief idea of the project:
+Get the current location from the browser by Geolocation and then pass the location parameters to the api and get the weather data present it in the html.
+Decorate the page and feel like an app.
+In order to make the project like an app, I copy the concept of iphone clock and add the dynamic clock using the flipclock.js.
+
+File included:
+Geo.js, index.html, style.css, style_bak.css, bg.jpg, widget_bg.png
+
+Reference:
+http://stackoverflow.com/
+http://www.w3schools.com/css/default.asp
+http://getbootstrap.com/css/
+http://openweathermap.org/current
+http://flipclockjs.com/
+
+
