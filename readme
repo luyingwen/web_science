@@ -1,0 +1,22 @@
+README
+Version 1.0 
+
+Author: Luying Wen
+
+Introduction:
+The tweet ticker is a project based on JSON, HTML, CSS, Javascript. This project shows 5 tweets and hashtags at a time and will slowly cycle through the tweets every three seconds.
+
+Installation:
+Run on the local server, and install apache.
+
+Brief idea of the project:
+First, link JSON file with html by using AJAX function, then you get all the needed information on the page. After that I use the animate function to cycle the word list. And in the CSS file I only show five tweets in the page.
+
+Reference:
+http://stackoverflow.com/
+http://css-tricks.com/snippets/jquery/cycle-through-a-list/
+http://www.w3schools.com/css/default.asp
+
+Collaborator:
+Sicong Zhao, Taoran Li
+
