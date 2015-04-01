@@ -1,0 +1,14 @@
+ReadMe
+Author: Luying Wen    RCS: wenl 
+
+Individual Portion:
+I’m using a public github repository for my labs and homework at https://github.com/luyingwen/web_science and I gave rplotka@tsi400.com and ahmed.morad@gmail.com access to the repo and included instructions and further information in the other readme for the github repo.
+
+Group Portion:
+Our team has set up a public github repository for our project at https://github.com/mithunkumarnallu/ITWS6961-Group10 . Each member has read/write access to the repo. Each team member will have their own branch that merges into the master as they become functional. 
+Server Portion:
+I’m using http://luying.myrpi.org/ for my hosting server. But since there is a bug at Cpanel, so I might change other service in the future.
+
+Bug tracking Portion:
+We are using the Github bug tracking to keep track of issues. It will also allow us to give access to the public to put in issues as well. There is a public interface that allows public users to add bugs that they may encounter. The Gitbug is also a central location for the team of developers to look at.
+
