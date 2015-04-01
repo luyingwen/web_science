@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Tweet Ticker</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		
+
+		<link rel="stylesheet" type="text/css" href="style.css"><head>
+	
+		<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+		
+	</head>
+
+<style>
+
+h2{
+	font-size: 40px;
+}
+
+h6 {
+	color: red;
+	font-size: 5px;
+}
+li {
+	color: blue;
+	font-size: 20px;
+}
+</style>
+
+
+<body>
+	<div style="text-align:center">
+		<p>
+     	<h2>Twitter</h2>
+     	<h6 >(choose a number between 1-10 </h6>
+     	<h6>because you will read from my account and I only have 10 tweets)</h6>
+     	</p>
+
+
+	<div ng-app="" ng-controller="GetTwitter" >
+		<p>Number: <input type="text" ng-model="counts" ></p>
+		 <p ng-bind="counts"></p>
+    	<button ng-click="toggle()">Tweets to JSON</button>
+    	
+  		<table id="disp" style="width:100%">
+			<tr>
+				<td width="70%"><div class="title t1" >Tweets</div></td>
+				
+			</tr>
+			<tr><div >
+				<td width="70%" ng-show="myVar">
+  					<li ng-repeat="x in names">
+    					{{ x.text}}
+ 					</li>
+				</td>	
+			</tr></div>
+		</table>
+	</div>
+</div>
+</body>
+
+<script>
+
+function GetTwitter($scope,$http) {
+	
+	$scope.myVar = false;
+    $scope.toggle = function() {
+        $scope.myVar = !$scope.myVar;
+    };
+
+    $http.get("convention-tweets.json")
+    .success(function(response) {
+    	var count = 5;//$scope.counts;
+    	console.log(count);
+    	var tweet =[];
+    	for(var i = 0; i < count; i++){
+    		var item = {};
+    		item = response[i];
+    		//tweet[i] = response[i];
+    		tweet.push(item);
+    	}
+    	$scope.names = tweet;
+    	console.log(tweet);
+    	console.log(response[0]);
+    });
+   
+}
+
+
+</script> 
+
+
+</html>
